@@ -1,18 +1,6 @@
 import React from 'react';
 
-interface CaseStudyProps {
-  title?: string;
-  duration?: string;
-  impact?: string;
-  description?: string;
-  image?: string;
-  imageAlt?: string;
-  challenges?: string[];
-  solutions?: string[];
-  results?: string[];
-}
-
-const CaseStudy: React.FC<CaseStudyProps> = ({
+const CaseStudy = ({
   title = '',
   duration = '',
   impact = '',
@@ -24,7 +12,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
   results = []
 }) => {
   // Helper function to safely render lists
-  const renderList = (items: string[] = [], type: 'challenges' | 'solutions' | 'results') => {
+  const renderList = (items = [], type) => {
     if (!Array.isArray(items) || items.length === 0) {
       return null;
     }
@@ -41,11 +29,11 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
     const getCardStyle = () => {
       switch(type) {
         case 'challenges': 
-          return 'border-l-4 border-red-500 bg-red-50 hover:bg-red-100';
+          return 'border-l-4 border-red-500 bg-gray-900';
         case 'solutions': 
-          return 'border-l-4 border-blue-500 bg-blue-50 hover:bg-blue-100';
+          return 'border-l-4 border-blue-500 bg-gray-900';
         case 'results': 
-          return 'border-l-4 border-green-500 bg-green-50 hover:bg-green-100';
+          return 'border-l-4 border-green-500 bg-gray-900';
         default: 
           return '';
       }
@@ -53,10 +41,10 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
 
     const getTitleStyle = () => {
       switch(type) {
-        case 'challenges': return 'text-red-700';
-        case 'solutions': return 'text-blue-700';
-        case 'results': return 'text-green-700';
-        default: return 'text-purple-600';
+        case 'challenges': return 'text-red-400';
+        case 'solutions': return 'text-blue-400';
+        case 'results': return 'text-green-400';
+        default: return 'text-purple-400';
       }
     };
 
@@ -70,7 +58,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
             <li key={index} 
                 className="flex items-start p-2 rounded-md transition-all duration-300 hover:translate-x-1">
               <span className={`h-2 w-2 rounded-full ${getIconColor()} mt-2 mr-3 flex-shrink-0`}></span>
-              <span className="text-gray-700">{item}</span>
+              <span className="text-gray-300">{item}</span>
             </li>
           ))}
         </ul>
@@ -79,7 +67,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
   };
 
   return (
-    <div className="mb-16 bg-white rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
+    <div className="mb-16 bg-gray-900 rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
       <div className="relative h-64 overflow-hidden">
         <img 
           src={image} 
@@ -109,7 +97,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
       
       <div className="p-6">
         {description && (
-          <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+          <p className="text-gray-400 mb-8 text-lg leading-relaxed">
             {description}
           </p>
         )}

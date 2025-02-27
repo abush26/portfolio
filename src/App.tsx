@@ -20,6 +20,7 @@ import {
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState({});
+  const [selectedSkill, setSelectedSkill] = useState(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,6 +40,63 @@ function App() {
 
     return () => sections.forEach(section => observer.unobserve(section));
   }, []);
+
+  // Skills data
+  const skills = [
+    {
+      category: "Frontend",
+      icon: <Code className="w-8 h-8" />,
+      items: [
+        { name: "HTML/CSS", level: 90 },
+        { name: "JavaScript", level: 85 },
+        { name: "React", level: 88 },
+        { name: "Next.js", level: 85 },
+        { name: "Angular.js", level: 82 },
+        { name: "Bootstrap", level: 90 },
+        { name: "Tailwind CSS", level: 88 }
+      ],
+      color: "from-pink-500 to-rose-500",
+      description: "Crafting beautiful and responsive user interfaces with modern web technologies."
+    },
+    {
+      category: "Backend",
+      icon: <Target className="w-8 h-8" />,
+      items: [
+        { name: "Node.js", level: 85 },
+        { name: "Express.js", level: 85 },
+        { name: "PHP", level: 82 },
+        { name: "MongoDB", level: 80 },
+        { name: "MySQL", level: 85 },
+        { name: "Flask", level: 80 }
+      ],
+      color: "from-cyan-500 to-blue-500",
+      description: "Building robust and scalable server-side applications and APIs."
+    },
+    {
+      category: "Programming",
+      icon: <Coffee className="w-8 h-8" />,
+      items: [
+        { name: "Python", level: 88 },
+        { name: "Java", level: 82 },
+        { name: "Git", level: 85 },
+        { name: "Machine Learning", level: 80 }
+      ],
+      color: "from-purple-500 to-indigo-500",
+      description: "Strong foundation in programming languages and software development."
+    },
+    {
+      category: "Tools",
+      icon: <Brain className="w-8 h-8" />,
+      items: [
+        { name: "Figma", level: 85 },
+        { name: "Git", level: 88 },
+        { name: "VS Code", level: 90 },
+        { name: "DevTools", level: 85 }
+      ],
+      color: "from-amber-500 to-orange-500",
+      description: "Proficient with modern development tools and workflows."
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-black text-gray-100">
@@ -62,9 +120,9 @@ function App() {
             <div className="hidden md:flex space-x-8">
               <a href="#" className="nav-link text-gray-300 hover:text-purple-400 transition">Home</a>
               <a href="#about" className="nav-link text-gray-300 hover:text-purple-400 transition">About</a>
-              <a href="#Case Studies" className="nav-link text-gray-300 hover:text-purple-400 transition">Case Studies</a>
+              <a href="#skills" className="nav-link text-gray-300 hover:text-purple-400 transition">Skills</a>
+              <a href="#caseStudies" className="nav-link text-gray-300 hover:text-purple-400 transition">Case Studies</a>
               <a href="#experience" className="nav-link text-gray-300 hover:text-purple-400 transition">Experience</a>
-              
               <a href="#projects" className="nav-link text-gray-300 hover:text-purple-400 transition">Projects</a>
               <a href="#contact" className="nav-link text-gray-300 hover:text-purple-400 transition">Contact</a>
             </div>
@@ -75,9 +133,9 @@ function App() {
             <div className="flex flex-col space-y-4">
               <a href="#" className="text-gray-300 hover:text-purple-400 transition">Home</a>
               <a href="#about" className="text-gray-300 hover:text-purple-400 transition">About</a>
+              <a href="#skills" className="text-gray-300 hover:text-purple-400 transition">Skills</a>
               <a href="#Case Studies" className="text-gray-300 hover:text-purple-400 transition">Case Studies</a>
               <a href="#experience" className="text-gray-300 hover:text-purple-400 transition">Experience</a>
-              <a href="#skills" className="text-gray-300 hover:text-purple-400 transition">Skills</a>
               <a href="#projects" className="text-gray-300 hover:text-purple-400 transition">Projects</a>
               <a href="#contact" className="text-gray-300 hover:text-purple-400 transition">Contact</a>
             </div>
@@ -96,7 +154,7 @@ function App() {
               </h1>
               <h2 className="text-2xl mb-6 text-gray-300">Junior Project Manager</h2>
               <p className="text-xl text-gray-400 mb-8">
-              I am Yeabsira, a software development student currently pursuing my Bachelor’s degree. With strong technical skills and two years of experience as the Embassy Coordinator for AASI, I have managed diplomatic relations and resolved complex issues for students. I am now eager to transition into a project manager role, leveraging my problem-solving abilities and leadership experience.
+              I am Yeabsira, a software development student currently pursuing my Bachelor's degree. With strong technical skills and two years of experience as the Embassy Coordinator for AASI, I have managed diplomatic relations and resolved complex issues for students. I am now eager to transition into a project manager role, leveraging my problem-solving abilities and leadership experience.
               </p>
               <div className="flex space-x-4">
                 <a href="#contact" className="group relative px-6 py-3 rounded-lg font-medium overflow-hidden">
@@ -111,29 +169,26 @@ function App() {
               </div>
             </div>
             <div className="relative z-10">
-  <div className="relative w-3/4 mx-auto">
-    {/* Image Wrapper */}
-    <div className="relative">
-      {/* Main Image */}
-      <img 
-        src="image/demo.png/img-Photoroom.png" 
-        width="950" 
-        height="250" 
-        alt="Demo Image"
-        className="rounded-lg shadow-2xl animate-float"
-      />
+              <div className="relative w-3/4 mx-auto">
+                {/* Image Wrapper */}
+                <div className="relative">
+                  {/* Main Image */}
+                  <img 
+                    src="image/demo.png/img-Photoroom.png" 
+                    alt="Demo Image"
+                    className="rounded-lg shadow-2xl animate-float"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent opacity-60"></div>
 
-      {/* Bottom Shadow Overlay */}
-      <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent to-black opacity-80 rounded-b-lg pointer-events-none z-20"></div>
+                  {/* Bottom Shadow Overlay */}
+                  <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-b from-transparent to-black opacity-80 rounded-b-lg pointer-events-none z-20"></div>
+                </div>
+              </div>
 
-    </div>
-  </div>
-
-  {/* Decorative Elements */}
-  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full opacity-20 animate-pulse"></div>
-  <div className="absolute -top-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full opacity-10 animate-pulse delay-300"></div>
-</div>
-
+              {/* Decorative Elements */}
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -top-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full opacity-10 animate-pulse delay-300"></div>
+            </div>
           </div>
         </div>
       </header>
@@ -176,16 +231,76 @@ function App() {
           </div>
         </div>
       </section>
-         {/* Case Studies Section */}
-         <section id="Case Studies" className={`py-20 bg-gray-950 ${isVisible.CaseStudy ? 'slide-in' : 'opacity-0'}`}></section>
-         <section className="py-20 bg-gray-50" id="case-studies">
+
+      {/* Skills Section */}
+      <section id="skills" className={`py-20 bg-black ${isVisible.skills ? 'slide-in' : 'opacity-0'}`}>
         <div className="container mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-4 animate-glow bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Case Studies</h2>
-          <h2 className="text-center">Case Studies</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center animate-glow">My Skills</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {skills.map((skill, index) => (
+              <div 
+                key={index} 
+                className="bg-gray-950 rounded-lg p-6 card-hover transition-all duration-300"
+                onClick={() => setSelectedSkill(selectedSkill === index ? null : index)}
+              >
+                <div className="flex items-center mb-4">
+                  <div className={`p-3 rounded-full bg-gradient-to-r ${skill.color} mr-4`}>
+                    {skill.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold">{skill.category}</h3>
+                </div>
+                
+                <p className="text-gray-400 mb-4">{skill.description}</p>
+                
+                {selectedSkill === index && (
+                  <div className="space-y-3 mt-4">
+                    {skill.items.map((item, itemIndex) => (
+                      <div key={itemIndex} className="space-y-1">
+                        <div className="flex justify-between">
+                          <span>{item.name}</span>
+                          <span>{item.level}%</span>
+                        </div>
+                        <div className="w-full bg-gray-700 rounded-full h-2">
+                          <div 
+                            className={`h-2 rounded-full bg-gradient-to-r ${skill.color}`}
+                            style={{ width: `${item.level}%` }}
+                          ></div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                
+                {selectedSkill !== index && (
+                  <button 
+                    className="mt-2 text-purple-400 hover:text-purple-300 text-sm"
+                  >
+                    Show Details →
+                  </button>
+                )}
+                
+                {selectedSkill === index && (
+                  <button 
+                    className="mt-4 text-purple-400 hover:text-purple-300 text-sm"
+                  >
+                    Hide Details ↑
+                  </button>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section id="caseStudies" className={`py-20 bg-gray-950 ${isVisible.caseStudies ? 'slide-in' : 'opacity-0'}`}>
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-center animate-glow">Case Studies</h2>
 
           <div className="max-w-4xl mx-auto">
-          <div className="flex justify-center"></div>  
-          
+            <div className="flex justify-center"></div>  
+            
             <CaseStudy 
               title="African Day Cultural Celebration"
               duration="3 months"
@@ -265,7 +380,6 @@ function App() {
           </div>
         </div>
       </section>
-
 
       {/* Experience Section */}
       <section id="experience" className={`py-20 bg-black ${isVisible.experience ? 'slide-in' : 'opacity-0'}`}>
@@ -417,6 +531,7 @@ function App() {
               <h3 className="text-xl font-semibold mb-4 text-gray-300">Quick Links</h3>
               <div className="grid grid-cols-2 gap-2">
                 <a href="#about" className="text-gray-400 hover:text-purple-400 transition">About</a>
+                <a href="#skills" className="text-gray-400 hover:text-purple-400 transition">Skills</a>
                 <a href="#experience" className="text-gray-400 hover:text-purple-400 transition">Experience</a>
                 <a href="#projects" className="text-gray-400 hover:text-purple-400 transition">Projects</a>
                 <a href="#contact" className="text-gray-400 hover:text-purple-400 transition">Contact</a>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CaseStudy from './CaseStudy';
+import Projects from './components/Projects';
 import { 
   Briefcase, 
   Calendar, 
@@ -78,8 +79,8 @@ function App() {
       items: [
         { name: "Python", level: 88 },
         { name: "Java", level: 82 },
-        { name: "Git", level: 85 },
-        { name: "Machine Learning", level: 80 }
+        { name: "C#", level: 85 },
+        { name: "TypeScript", level: 80 }
       ],
       color: "from-purple-500 to-indigo-500",
       description: "Strong foundation in programming languages and software development."
@@ -88,10 +89,11 @@ function App() {
       category: "Tools",
       icon: <Brain className="w-8 h-8" />,
       items: [
-        { name: "Figma", level: 85 },
+        { name: "Jira", level: 85 },
         { name: "Git", level: 88 },
-        { name: "VS Code", level: 90 },
-        { name: "DevTools", level: 85 }
+        { name: "Figma", level: 90 },
+        { name: "HubSpot", level: 85 },
+        { name: "ClickUp", level: 80 }
       ],
       color: "from-amber-500 to-orange-500",
       description: "Proficient with modern development tools and workflows."
@@ -154,7 +156,7 @@ function App() {
               </h1>
               <h2 className="text-2xl mb-6 text-gray-300">Junior Project Manager</h2>
               <p className="text-xl text-gray-400 mb-8">
-              I am Yeabsira, a software development student currently pursuing my Bachelor's degree. With strong technical skills and two years of experience as the Embassy Coordinator for AASI, I have managed diplomatic relations and resolved complex issues for students. I am now eager to transition into a project manager role, leveraging my problem-solving abilities and leadership experience.
+              I am Yeabsira, a software development student currently pursuing my Bachelor's degree. With strong technical skills and two years of experience as the Embassy Coordinator for Association of African students in India, I have managed diplomatic relations and resolved complex issues for students. I am now eager to transition into a project manager role, leveraging my problem-solving abilities and leadership experience.
               </p>
               <div className="flex space-x-4">
                 <a href="#contact" className="group relative px-6 py-3 rounded-lg font-medium overflow-hidden">
@@ -199,7 +201,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80" 
+                src="image\demo.png\WhatsApp Image 2025-03-01 at 01.28.03_8a559a4b.jpg" 
                 alt="Creative Workspace" 
                 className="rounded-lg shadow-xl"
               />
@@ -207,7 +209,11 @@ function App() {
             <div>
               <h2 className="text-3xl font-bold mb-6 animate-glow">About Me</h2>
               <p className="text-gray-400 mb-6">
-                As a Junior Project Manager with 1 year of experience, I bring fresh perspectives and modern methodologies to project management. My focus is on delivering results while fostering team collaboration and maintaining clear communication channels.
+              I have a passion for technology and leadership, combining software development expertise with hands-on experience in project coordination. My journey has been a mix of coding, managing teams, and ensuring smooth operations in high-pressure environments. I thrive in fast-paced settings where I can apply my analytical thinking and problem-solving skills to drive success.
+
+Over the past two years, I have worked closely with embassies, universities, and student organizations, leading initiatives to support African students in India. This experience has strengthened my ability to handle negotiations, organize large-scale events, and communicate effectively with stakeholders at all levels.
+
+I enjoy working with diverse teams, solving challenges, and bringing ideas to life through efficient planning and execution. My goal is to bridge the gap between technical development and project management to drive impactful solutions and contribute to innovative projects that make a difference.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center space-x-2 card-hover bg-black/50 p-3 rounded-lg">
@@ -300,7 +306,29 @@ function App() {
 
           <div className="max-w-4xl mx-auto">
             <div className="flex justify-center"></div>  
-            
+            <CaseStudy 
+              title="Cross-Cultural Communication Framework"
+              duration="3 months"
+              impact="Improved communication efficiency by 60%"
+              description="Developed and implemented a framework for effective communication between international students and embassy officials."
+              image="image\demo.png\WhatsApp Image 2025-03-01 at 01.10.27_f9978872.jpg"
+              imageAlt="Team collaboration in modern office"
+              challenges={[
+                "Language barriers",
+                "Cultural differences",
+                "Time zone coordination"
+              ]}
+              solutions={[
+                "Created multilingual documentation",
+                "Established cultural training programs",
+                "Implemented flexible communication channels"
+              ]}
+              results={[
+                "60% improvement in communication efficiency",
+                "Reduced misunderstandings by 75%",
+                "Increased student engagement"
+              ]}
+            />
             <CaseStudy 
               title="African Day Cultural Celebration"
               duration="3 months"
@@ -329,10 +357,10 @@ function App() {
             />
             <CaseStudy 
               title="African Students Graduation Ceremony"
-              duration="4 months"
-              impact="700+ graduates and guests"
+              duration="5 months"
+              impact="1000+ graduates and guests"
               description="Orchestrated a memorable graduation ceremony celebrating the achievements of African students, bringing together graduates, families, and institutional partners."
-              image="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+              image="image\demo.png\WhatsApp Image 2025-03-01 at 00.51.08_8fc06747.jpg"
               imageAlt="Graduation ceremony celebration"
               challenges={[
                 "Coordinating with multiple educational institutions",
@@ -354,29 +382,7 @@ function App() {
               ]}
             />
             
-            <CaseStudy 
-              title="Cross-Cultural Communication Framework"
-              duration="3 months"
-              impact="Improved communication efficiency by 60%"
-              description="Developed and implemented a framework for effective communication between international students and embassy officials."
-              image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-              imageAlt="Team collaboration in modern office"
-              challenges={[
-                "Language barriers",
-                "Cultural differences",
-                "Time zone coordination"
-              ]}
-              solutions={[
-                "Created multilingual documentation",
-                "Established cultural training programs",
-                "Implemented flexible communication channels"
-              ]}
-              results={[
-                "60% improvement in communication efficiency",
-                "Reduced misunderstandings by 75%",
-                "Increased student engagement"
-              ]}
-            />
+            
           </div>
         </div>
       </section>
@@ -389,108 +395,47 @@ function App() {
             <div className="bg-gray-950 p-6 rounded-lg card-hover">
               <div className="flex items-center mb-4">
                 <Briefcase className="text-purple-500 mr-2" />
-                <h3 className="text-xl font-semibold">Junior Project Manager</h3>
+                <h3 className="text-xl font-semibold">Embassy Coordinator</h3>
               </div>
-              <p className="text-gray-400 mb-2">TechCorp Solutions</p>
+              <p className="text-gray-400 mb-2">Association of African Students in India (AASI)</p>
               <div className="flex items-center text-gray-500 mb-4">
                 <Calendar className="mr-2" size={16} />
                 <span>2023 - Present</span>
               </div>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
-                <li>Coordinated a major tech conference with 700+ attendees</li>
-                <li>Received recognition award for outstanding event management</li>
-                <li>Implemented Agile methodologies resulting in 25% faster project delivery</li>
+                <li>Negotiated partnerships with key institutions, including Audi Car and Max Hospital to enhance student welfare and engagement</li>
+                <li>Managed diplomatic relations with over 40 African embassies in India, ensuring strong support for African students</li>
+                <li>Organized large-scale events, such as the African Day celebration, fostering cultural exchange and community building</li>
                 <li>Improved team communication through new collaboration tools</li>
               </ul>
               {/* Achievement Photo */}
               <div className="mt-6 overflow-hidden rounded-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?auto=format&fit=crop&q=80" 
+                  src="image\demo.png\WhatsApp Image 2025-03-01 at 13.18.41_67ab9adb.jpg" 
                   alt="Award Ceremony" 
-                  className="w-full h-48 object-cover transform hover:scale-105 transition duration-500"
+                  className="w-full h-80 object-cover transform hover:scale-105 transition duration-500"
                 />
-                <p className="text-sm text-gray-500 mt-2">Receiving recognition award for coordinating the Tech Innovation Summit 2023</p>
+                <p className="text-sm text-gray-500 mt-2">Receiving recognition award for coordinating</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Projects Section */}
-      <section id="projects" className={`py-20 bg-gray-950 ${isVisible.projects ? 'slide-in' : 'opacity-0'}`}>
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-center animate-glow">Featured Projects</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <div className="bg-black rounded-lg overflow-hidden card-hover">
-              <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" 
-                  alt="E-Commerce Platform" 
-                  className="w-full h-48 object-cover transform hover:scale-110 transition duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">E-Commerce Platform</h3>
-                <p className="text-gray-400 mb-4">
-                  Led the development of a modern e-commerce platform, improving sales by 40%.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">Agile</span>
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">Scrum</span>
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">JIRA</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 2 */}
-            <div className="bg-black rounded-lg overflow-hidden card-hover">
-              <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80" 
-                  alt="Team Collaboration Tool" 
-                  className="w-full h-48 object-cover transform hover:scale-110 transition duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Team Collaboration Tool</h3>
-                <p className="text-gray-400 mb-4">
-                  Managed the implementation of a new collaboration tool for 50+ team members.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">Slack</span>
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">Trello</span>
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">Teams</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className="bg-black rounded-lg overflow-hidden card-hover">
-              <div className="overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80" 
-                  alt="Mobile App Launch" 
-                  className="w-full h-48 object-cover transform hover:scale-110 transition duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Mobile App Launch</h3>
-                <p className="text-gray-400 mb-4">
-                  Coordinated the successful launch of a fitness tracking mobile app.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">Mobile</span>
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">Agile</span>
-                  <span className="px-3 py-1 bg-purple-900/50 rounded-full text-sm">Analytics</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Projects */}
+      <section id="projects" className="py-20 px-4 md:px-8 bg-[#0d0d12]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-5xl font-bold mb-16 text-center">
+            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+              
+            </span>
+          </h2>
+          <Projects />
         </div>
       </section>
 
-      {/* Contact Section */}
+     
+
+     {/* Contact Section */}
       <section id="contact" className={`py-20 bg-black ${isVisible.contact ? 'slide-in' : 'opacity-0'}`}>
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center animate-glow">Get in Touch</h2>

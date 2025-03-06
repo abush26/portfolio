@@ -68,7 +68,7 @@ const CaseStudy = ({
 
   return (
     <div className="mb-16 bg-gray-900 rounded-lg shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-80 overflow-hidden">
         <img 
           src={image} 
           alt={imageAlt}

@@ -334,7 +334,7 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
               duration="3 months"
               impact="700+ attendees, including embassy representatives"
               description="Successfully organized and managed a large-scale cultural event celebrating African heritage and fostering international relationships."
-              image="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+              image="image\demo.png\IMG_4151.PNG" 
               imageAlt="Cultural celebration event with diverse attendees"
               challenges={[
                 "Coordinating with multiple embassies and stakeholders",
@@ -403,7 +403,7 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
                 <span>2023 - Present</span>
               </div>
               <ul className="list-disc list-inside text-gray-400 space-y-2">
-                <li>Negotiated partnerships with key institutions, including Audi Car and Max Hospital to enhance student welfare and engagement</li>
+                <li>Negotiated partnerships with key institutions, including Audi Car and Max Hospital to enhance Africa day event and engagement</li>
                 <li>Managed diplomatic relations with over 40 African embassies in India, ensuring strong support for African students</li>
                 <li>Organized large-scale events, such as the African Day celebration, fostering cultural exchange and community building</li>
                 <li>Improved team communication through new collaboration tools</li>
@@ -441,19 +441,19 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
           <h2 className="text-3xl font-bold mb-12 text-center animate-glow">Get in Touch</h2>
           <div className="max-w-xl mx-auto">
             <div className="flex justify-center space-x-6 mb-12">
-              <a href="mailto:sarah@example.com" className="group flex flex-col items-center space-y-2 text-gray-400 hover:text-purple-500 transition">
+              <a href="mailto:yeabsiraf22@gmail.com" className="group flex flex-col items-center space-y-2 text-gray-400 hover:text-purple-500 transition">
                 <div className="p-4 rounded-full bg-gray-900 group-hover:bg-gray-800 transition transform group-hover:scale-110">
                   <Mail className="w-6 h-6" />
                 </div>
                 <span>Email</span>
               </a>
-              <a href="https://github.com/sarahanderson" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center space-y-2 text-gray-400 hover:text-purple-500 transition">
+              <a href="https://github.com/abush26" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center space-y-2 text-gray-400 hover:text-purple-500 transition">
                 <div className="p-4 rounded-full bg-gray-900 group-hover:bg-gray-800 transition transform group-hover:scale-110">
                   <Github className="w-6 h-6" />
                 </div>
                 <span>GitHub</span>
               </a>
-              <a href="https://linkedin.com/in/sarahanderson" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center space-y-2 text-gray-400 hover:text-purple-500 transition">
+              <a href="https://www.linkedin.com/in/yeabsira-feleke-29a988286/" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center space-y-2 text-gray-400 hover:text-purple-500 transition">
                 <div className="p-4 rounded-full bg-gray-900 group-hover:bg-gray-800 transition transform group-hover:scale-110">
                   <Linkedin className="w-6 h-6" />
                 </div>
@@ -485,13 +485,13 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-300">Let's Connect</h3>
               <div className="flex space-x-4">
-                <a href="https://github.com/sarahanderson" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition">
+                <a href="https://github.com/abush26" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition">
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="https://linkedin.com/in/sarahanderson" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition">
+                <a href="https://www.linkedin.com/in/yeabsira-feleke-29a988286/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="mailto:sarah@example.com" className="text-gray-400 hover:text-purple-400 transition">
+                <a href="mailto:yeabsiraf22@gmail.com" className="text-gray-400 hover:text-purple-400 transition">
                   <Mail className="w-5 h-5" />
                 </a>
               </div>

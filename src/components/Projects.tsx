@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
+    title: 'Team web application',
     description: 'Led the development of a modern e-commerce platform, improving sales by 40%.',
     image: 'image/demo.png/Screenshot 2024-04-27 003628.png',
-    technologies: ['Agile', 'Scrum', 'JIRA'],
+    technologies: ['JavaScript', 'Tailwind css', 'MySQL'],
     github: 'https://github.com/abush26',
     
     color: 'from-blue-500 to-purple-500'
   },
   {
-    title: 'Team Collaboration Tool',
-    description: 'Managed the implementation of a new collaboration tool for 50+ team members.',
-    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80',
-    technologies: ['Slack', 'Trello', 'Teams'],
+    title: 'Amharic sentiment analysis',
+    description: 'Python-based tool for performing sentiment analysis on Amharic text.',
+    image: 'image/demo.png/Screenshot 2025-03-25 174914.png',
+    technologies: ['Python', 'Machine learning', 'Jupyter'],
     github: 'https://github.com/abush26',
     
     color: 'from-purple-500 to-pink-500'

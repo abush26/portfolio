@@ -308,15 +308,15 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
             <div className="flex justify-center"></div>  
             <CaseStudy 
               title="Cross-Cultural Communication Framework"
-              duration="3 months"
+              duration="4 months"
               impact="Improved communication efficiency by 60%"
-              description="Developed and implemented a framework for effective communication between international students and embassy officials."
+              description="I led a cross-functional team through agile event planning cycles, focusing on improving communication between international students and embassy officials. To address challenges such as language barriers and cultural differences, I segmented stakeholders, including embassy representatives, students, sponsors, and cultural organizations, based on their specific needs and expectations. I created a detailed communication plan, ensuring each stakeholder received timely and relevant updates. By implementing multilingual documentation, cultural training programs, and flexible communication channels, I achieved a 60% improvement in communication efficiency. This was measured by feedback from both embassy officials and students, showing a significant reduction in misunderstandings and an increase in engagement and clarity throughout the process."
               image="image\demo.png\WhatsApp Image 2025-03-01 at 01.10.27_f9978872.jpg"
               imageAlt="Team collaboration in modern office"
               challenges={[
                 "Language barriers",
                 "Cultural differences",
-                "Time zone coordination"
+                "Coordination"
               ]}
               solutions={[
                 "Created multilingual documentation",
@@ -333,7 +333,7 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
               title="African Day Cultural Celebration"
               duration="3 months"
               impact="700+ attendees, including embassy representatives"
-              description="Successfully organized and managed a large-scale cultural event celebrating African heritage and fostering international relationships."
+              description="In organizing the African Day Cultural Celebration, I took a systematic approach, segmenting stakeholders such as embassy representatives, sponsors, and cultural organizations by their unique interests and expectations. I created and implemented a stakeholder communication plan, ensuring that every sponsor and embassy was well-informed throughout the planning cycle. Regular updates and feedback loops helped to foster strong partnerships, leading to over 700 attendees and a 95% positive feedback rate."
               image="image\demo.png\IMG_4151.PNG" 
               imageAlt="Cultural celebration event with diverse attendees"
               challenges={[
@@ -350,16 +350,16 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
               ]}
               results={[
                 "Successfully hosted 700+ attendees",
-                "Secured participation from multiple embassy representatives",
+                "Secured participation from multiple embassy representatives and institutional partnerships",
                 "Achieved 95% positive feedback from attendees",
-                "Strengthened institutional partnerships"
+                "Successfully aligned the project goals with the allocated budget"
               ]}
             />
             <CaseStudy 
               title="African Students Graduation Ceremony"
               duration="5 months"
               impact="1000+ graduates and guests"
-              description="Orchestrated a memorable graduation ceremony celebrating the achievements of African students, bringing together graduates, families, and institutional partners."
+              description="I served as the overall coordinator, applying a structured project lifecycle (initiation, planning, execution, monitoring) to deliver a culturally rich and organized ceremony. I conducted stakeholder mapping, ensured embassies received the updates they valued most, and facilitated smooth collaboration between teams and institutions. Orchestrated a memorable graduation ceremony celebrating the achievements of African students, bringing together graduates, families, and institutional partners."
               image="image\demo.png\WhatsApp Image 2025-03-01 at 00.51.08_8fc06747.jpg"
               imageAlt="Graduation ceremony celebration"
               challenges={[
@@ -378,7 +378,7 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
                 "Successful ceremony with 700+ attendees",
                 "100% graduate participation rate",
                 "Smooth coordination of multiple cultural elements",
-                "Created lasting memories for graduates and families"
+                "Stayed within budget while delivering a memorable experience"
               ]}
             />
             

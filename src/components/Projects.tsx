@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Team web application',
-    description: 'Led the development of a modern e-commerce platform, improving sales by 40%.',
+    title: '🏀Team Web Application',
+    description: 'Designed and developed a modern, responsive web application for the Ramanujan College basketball team.',
     image: 'image/demo.png/Screenshot 2024-04-27 003628.png',
     technologies: ['JavaScript', 'Tailwind css', 'MySQL'],
     github: 'https://github.com/abush26',
@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Amharic sentiment analysis',
     description: 'Python-based tool for performing sentiment analysis on Amharic text.',
-    image: 'image/demo.png/Screenshot 2025-03-25 174914.png',
+    image: 'image/demo.png/2.png',
     technologies: ['Python', 'Machine learning', 'Jupyter'],
     github: 'https://github.com/abush26',
     

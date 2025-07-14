@@ -176,9 +176,9 @@ function App() {
                 <div className="relative">
                   {/* Main Image */}
                   <img 
-                    src="image/demo.png/img-Photoroom.png" 
+                    src="image\demo.png\17.png" 
                     alt="Demo Image"
-                    className="rounded-lg shadow-2xl animate-float"
+                    className="w-4/5 max-w-md rounded-lg shadow-2xl animate-float"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent opacity-60"></div>
 
@@ -332,8 +332,8 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
             <CaseStudy 
               title="African Day Cultural Celebration"
               duration="3 months"
-              impact="700+ attendees, including embassy representatives"
-              description="In organizing the African Day Cultural Celebration, I took a systematic approach, segmenting stakeholders such as embassy representatives, sponsors, and cultural organizations by their unique interests and expectations. I created and implemented a stakeholder communication plan, ensuring that every sponsor and embassy was well-informed throughout the planning cycle. Regular updates and feedback loops helped to foster strong partnerships, leading to over 700 attendees and a 95% positive feedback rate."
+              impact="500+ attendees, including embassy representatives"
+              description="In organizing the African Day Cultural Celebration, I took a systematic approach, segmenting stakeholders such as embassy representatives, sponsors, and cultural organizations by their unique interests and expectations. I created and implemented a stakeholder communication plan, ensuring that every sponsor and embassy was well-informed throughout the planning cycle. Regular updates and feedback loops helped to foster strong partnerships, leading to over 500 attendees and a 95% positive feedback rate."
               image="image\demo.png\IMG_4151.PNG" 
               imageAlt="Cultural celebration event with diverse attendees"
               challenges={[
@@ -349,7 +349,7 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
                 "Developed detailed budget tracking and allocation system"
               ]}
               results={[
-                "Successfully hosted 700+ attendees",
+                "Successfully hosted 500+ attendees",
                 "Secured participation from multiple embassy representatives and institutional partnerships",
                 "Achieved 95% positive feedback from attendees",
                 "Successfully aligned the project goals with the allocated budget"
@@ -358,9 +358,9 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
             <CaseStudy 
               title="African Students Graduation Ceremony"
               duration="5 months"
-              impact="1000+ graduates and guests"
+              impact="800+ graduates and guests"
               description="I served as the overall coordinator, applying a structured project lifecycle (initiation, planning, execution, monitoring) to deliver a culturally rich and organized ceremony. I conducted stakeholder mapping, ensured embassies received the updates they valued most, and facilitated smooth collaboration between teams and institutions. Orchestrated a memorable graduation ceremony celebrating the achievements of African students, bringing together graduates, families, and institutional partners."
-              image="image\demo.png\WhatsApp Image 2025-03-01 at 00.51.08_8fc06747.jpg"
+              image="image\demo.png\6.jpg"
               imageAlt="Graduation ceremony celebration"
               challenges={[
                 "Coordinating with multiple educational institutions",
@@ -375,7 +375,7 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
                 "Formed specialized coordination teams"
               ]}
               results={[
-                "Successful ceremony with 700+ attendees",
+                "Successful ceremony with 800+ attendees",
                 "100% graduate participation rate",
                 "Smooth coordination of multiple cultural elements",
                 "Stayed within budget while delivering a memorable experience"

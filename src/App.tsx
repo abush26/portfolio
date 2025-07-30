@@ -209,9 +209,9 @@ function App() {
             <div>
               <h2 className="text-3xl font-bold mb-6 animate-glow">About Me</h2>
               <p className="text-gray-400 mb-6">
-              I have a passion for technology and leadership, combining software development expertise with hands-on experience in project coordination. My journey has been a mix of coding, managing teams, and ensuring smooth operations in high-pressure environments. I thrive in fast-paced settings where I can apply my analytical thinking and problem-solving skills to drive success.
+              I have a passion for technology and leadership, combining software development expertise with hands on experience in project coordination. My journey has been a mix of coding, managing teams, and ensuring smooth operations in high pressure environments. I thrive in fast paced settings where I can apply my analytical thinking and problem solving skills to drive success.
 
-Over the past two years, I have worked closely with embassies, universities, and student organizations, leading initiatives to support African students in India. This experience has strengthened my ability to handle negotiations, organize large-scale events, and communicate effectively with stakeholders at all levels.
+Over the past two years, I have worked closely with embassies, universities, and student organizations, leading initiatives to support African students in India. This experience has strengthened my ability to handle negotiations, organize large scale events, and communicate effectively with stakeholders at all levels.
 
 I enjoy working with diverse teams, solving challenges, and bringing ideas to life through efficient planning and execution. My goal is to bridge the gap between technical development and project management to drive impactful solutions and contribute to innovative projects that make a difference.
               </p>
@@ -307,33 +307,33 @@ I enjoy working with diverse teams, solving challenges, and bringing ideas to li
           <div className="max-w-4xl mx-auto">
             <div className="flex justify-center"></div>  
             <CaseStudy 
-              title="Cross-Cultural Communication Framework"
+              title="Cross Cultural Communication Framework"
               duration="4 months"
               impact="Improved communication efficiency by 60%"
-              description="I led a cross-functional team through agile event planning cycles, focusing on improving communication between international students and embassy officials. To address challenges such as language barriers and cultural differences, I segmented stakeholders, including embassy representatives, students, sponsors, and cultural organizations, based on their specific needs and expectations. I created a detailed communication plan, ensuring each stakeholder received timely and relevant updates. By implementing multilingual documentation, cultural training programs, and flexible communication channels, I achieved a 60% improvement in communication efficiency. This was measured by feedback from both embassy officials and students, showing a significant reduction in misunderstandings and an increase in engagement and clarity throughout the process."
+              description="I led a cross functional team to improve communication between African international students and Indian university staff, including professors and administrators. Many students faced challenges due to language barriers, unfamiliar academic expectations, and cultural misunderstandings. To address this, I segmented key stakeholders  including students, university faculty, embassy representatives, and created a tailored communication plan for each group. I introduced multilingual support materials, organized cultural sensitivity workshops for both students and staff, and implemented flexible communication channels such as WhatsApp groups, email briefings, and in person liaisons."
               image="image/demo.png/WhatsApp Image 2025-03-01 at 01.10.27_f9978872.jpg"
               imageAlt="Team collaboration in modern office"
               challenges={[
-                "Language barriers",
-                "Cultural differences",
-                "Coordination"
+                "Language barriers between African students and Indian professors/staff",
+                "Cultural misunderstandings affecting academic and social integration",
+                "Difficult coordination across embassies, students, and institutions"
               ]}
               solutions={[
-                "Created multilingual documentation",
-                "Established cultural training programs",
-                "Implemented flexible communication channels"
+                "Created multilingual support documents and orientation guides",
+                "Launched cultural awareness workshops for faculty and students",
+                "Set up flexible, multi platform communication channels"
               ]}
               results={[
                 "60% improvement in communication efficiency",
                 "Reduced misunderstandings by 75%",
-                "Increased student engagement"
+                "Increased engagement and comfort among African students"
               ]}
             />
             <CaseStudy 
               title="African Day Cultural Celebration"
               duration="3 months"
               impact="500+ attendees, including embassy representatives"
-              description="In organizing the African Day Cultural Celebration, I took a systematic approach, segmenting stakeholders such as embassy representatives, sponsors, and cultural organizations by their unique interests and expectations. I created and implemented a stakeholder communication plan, ensuring that every sponsor and embassy was well-informed throughout the planning cycle. Regular updates and feedback loops helped to foster strong partnerships, leading to over 500 attendees and a 95% positive feedback rate."
+              description="In organizing the African Day Cultural Celebration, I took a systematic approach, segmenting stakeholders such as embassy representatives, sponsors, and cultural organizations by their unique interests and expectations. I created and implemented a stakeholder communication plan, ensuring that every sponsor and embassy was well informed throughout the planning cycle. Regular updates and feedback loops helped to foster strong partnerships, leading to over 500 attendees and a 95% positive feedback rate."
               image="image/demo.png/IMG_4151.PNG" 
               imageAlt="Cultural celebration event with diverse attendees"
               challenges={[
